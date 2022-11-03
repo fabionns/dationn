@@ -1,0 +1,12 @@
+version: 'version'
+
+services:
+  control:
+    build: .
+    container_name: control
+    command: ["tail", "-f", "/dev/null"]
+    hostname: control 
+    image: ubuntu:20.04
+    volumes: 
+      - .:/root/ansible
+
