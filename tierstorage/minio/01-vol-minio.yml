@@ -1,4 +1,0 @@
-apiversion: 1.0.0
-kind: PersistentVolume
-metadata:
-  name: minio-pv

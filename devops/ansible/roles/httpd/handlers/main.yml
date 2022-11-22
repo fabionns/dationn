@@ -1,0 +1,5 @@
+- name: Start httpd
+  service: name=httpd state=started
+  notify:
+    - Restart httpd
+    

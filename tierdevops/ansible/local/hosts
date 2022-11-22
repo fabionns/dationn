@@ -1,6 +1,0 @@
-[manager]
-
-[worker]
-
-[all:vars]
-ansible_ssh_private_key = False

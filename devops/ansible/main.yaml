@@ -1,0 +1,9 @@
+--- #
+- hosts: cluster-kubenetes
+  gather_facts: no
+  become: true
+  roles:
+    - nginx
+    - minio
+    
+... #
