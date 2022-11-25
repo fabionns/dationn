@@ -7,12 +7,11 @@ provider "azurerm" {
   features {}
 }
 
-provider "aws" {
-    version = "~> 2.0"
-    region  = "us-east-2"
+provider "helm" {
+  kubernetes {
+    config_path = "~/.kube/config"
+  }
 }
-  
-
 #provider "libvirt" {
   # Configuration options
 #}

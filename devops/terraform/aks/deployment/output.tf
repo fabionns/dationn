@@ -7,7 +7,7 @@ resource "local_file" "kubeconfig" {
     content = azurerm_kubernetes_cluster.clusterk8s.kube_config_raw
 }
 
-# Gera o arquivo de inventario dp ansible
+# Gera o arquivo de inventario do ansible
 resource "null_resource" "ansible" {
     depends_on = [local_file.kubeconfig]
     connection {
